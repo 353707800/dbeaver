@@ -56,7 +56,7 @@ class ObjectMapperUtils {
         try {
             val javaType = fromCollectionType(List::class.java, type)
             val mapper = ObjectMapper()
-            return mapper.readValue<Any>(json, javaType) as List<T>
+            return mapper.readValue(json, javaType) as List<T>
         } catch (e: IOException) {
             return null
         } catch (e: Exception) {

@@ -6,5 +6,8 @@ package com.today.controller
  * @version 2018/7/13 0013
  */
 fun main(args: Array<String>) {
-    println("hello kotlin")
+    val list = listOf("vue","angular","react")
+    list.forEach {
+        println(it)
+    }
 }
