@@ -10,4 +10,5 @@ fun main(args: Array<String>) {
     list.forEach {
         println(it)
     }
+    print("hello kotlin")
 }
